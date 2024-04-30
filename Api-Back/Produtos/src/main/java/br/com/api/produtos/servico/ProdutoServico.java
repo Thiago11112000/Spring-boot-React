@@ -39,7 +39,7 @@ public class ProdutoServico {
 
         // Método para remover produtos
 
-    public ResponseEntity<RespostaModelo> excluir(Long codigo) {
+    public ResponseEntity<RespostaModelo> remover(Long codigo) {
 
         pr.deleteById(codigo);
         rm.setMensagem("Produto removido com sucesso!");
